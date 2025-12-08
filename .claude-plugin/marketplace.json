@@ -1,0 +1,21 @@
+{
+  "name": "apple-platform-build-tools",
+  "owner": {
+    "name": "Kyle Hughes",
+    "email": "kyle@kylehugh.es"
+  },
+  "metadata": {
+    "description": "Build, test, and archive Swift packages and Xcode projects for Apple platforms.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "apple-platform-build-tools",
+      "description": "Reference documentation for xcodebuild and swift build, plus an autonomous build agent that absorbs verbose logs and preserves your context window.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/building-apple-platform-products"],
+      "agents": ["./agents/apple-platform-builder.md"]
+    }
+  ]
+}
