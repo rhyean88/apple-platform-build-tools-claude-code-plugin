@@ -16,7 +16,7 @@ xcodebuild test \
 
 ### Build for Testing (Separate Steps)
 
-Useful for CI where you want to build once and run tests multiple times.
+Useful when you want to build once and run tests multiple times.
 
 **Step 1: Build**
 
@@ -233,8 +233,6 @@ xcodebuild test \
 
 ## Test Without Code Signing
 
-For CI environments:
-
 ```bash
 xcodebuild test \
   -scheme "MyApp" \
@@ -255,26 +253,11 @@ xcodebuild test \
 | Parallel testing | `-parallel-testing-enabled YES` |
 | Save results | `-resultBundlePath ./Results.xcresult` |
 
-## Complete Example
-
-### Minimal
+## Example
 
 ```bash
 xcodebuild test -scheme "MyApp" \
   -destination 'platform=iOS Simulator,name=iPhone 17'
-```
-
-### Full CI Example
-
-```bash
-xcodebuild test \
-  -scheme "MyApp" \
-  -destination 'platform=iOS Simulator,name=iPhone 17' \
-  -derivedDataPath ./build \
-  -resultBundlePath ./TestResults.xcresult \
-  -enableCodeCoverage YES \
-  -parallel-testing-enabled YES \
-  CODE_SIGNING_ALLOWED=NO
 ```
 
 ## Troubleshooting

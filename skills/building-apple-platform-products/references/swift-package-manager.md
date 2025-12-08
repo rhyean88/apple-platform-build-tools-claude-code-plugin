@@ -267,21 +267,11 @@ targets: [
 | Clean build | `swift package clean` |
 | Full reset | `swift package reset` |
 
-## Complete Example
-
-### Minimal
+## Example
 
 ```bash
 swift build
 swift test
-```
-
-### Full CI Example
-
-```bash
-swift build -c release -v
-swift test --parallel --enable-code-coverage
-swift build --show-bin-path -c release
 ```
 
 ## Troubleshooting

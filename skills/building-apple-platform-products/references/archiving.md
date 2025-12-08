@@ -83,7 +83,7 @@ xcodebuild archive \
 
 ## Archive Without Code Signing
 
-For CI/CD or development builds where signing is not needed:
+For builds where signing is not needed:
 
 ```bash
 xcodebuild archive \
@@ -175,27 +175,11 @@ xcodebuild archive -scheme "MyFramework" \
 | Clean archive | `xcodebuild clean archive -scheme <name> -archivePath <path>` |
 | Check archive | `plutil -p <path>.xcarchive/Info.plist` |
 
-## Complete Example
-
-### Minimal
+## Example
 
 ```bash
 xcodebuild archive -scheme "MyApp" \
   -archivePath ./build/MyApp.xcarchive
-```
-
-### Full CI Example
-
-```bash
-xcodebuild archive \
-  -scheme "MyApp" \
-  -configuration Release \
-  -destination 'generic/platform=iOS' \
-  -derivedDataPath ./build/DerivedData \
-  -archivePath ./build/MyApp.xcarchive \
-  CODE_SIGNING_ALLOWED=NO \
-  CODE_SIGN_IDENTITY="" \
-  ONLY_ACTIVE_ARCH=NO
 ```
 
 ## Troubleshooting

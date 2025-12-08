@@ -186,25 +186,10 @@ DEVELOPER_DIR=/Applications/Xcode-15.4.app xcodebuild build
 | Show destinations | `xcodebuild -showdestinations -scheme <name>` |
 | Resolve package dependencies | `xcodebuild -resolvePackageDependencies` |
 
-## Complete Example
-
-### Minimal
+## Example
 
 ```bash
 xcodebuild build -scheme "MyApp"
-```
-
-### Full CI Example
-
-```bash
-xcodebuild build \
-  -scheme "MyApp" \
-  -configuration Release \
-  -destination 'generic/platform=iOS' \
-  -derivedDataPath ./build \
-  CODE_SIGNING_ALLOWED=NO \
-  CODE_SIGN_IDENTITY="" \
-  ONLY_ACTIVE_ARCH=NO
 ```
 
 ## Troubleshooting

@@ -1,6 +1,6 @@
 ---
 name: building-apple-platform-products
-description: Builds, tests, and archives Swift packages and Xcode projects for Apple platforms. Use when running xcodebuild, swift build, or swift test commands, discovering schemes and targets, selecting simulator destinations, or configuring CI builds for iOS, macOS, tvOS, watchOS, or visionOS.
+description: Builds, tests, and archives Swift packages and Xcode projects for Apple platforms. Use when running xcodebuild, swift build, or swift test commands, discovering schemes and targets, or selecting simulator destinations for iOS, macOS, tvOS, watchOS, or visionOS.
 ---
 
 # Building Apple Platform Products
@@ -106,10 +106,10 @@ For all platforms, multiple destinations, or troubleshooting destination errors,
 |-------|------|--------------|
 | Project Discovery | [project-discovery.md](references/project-discovery.md) | Mixed projects, shared schemes |
 | Swift Package Manager | [swift-package-manager.md](references/swift-package-manager.md) | Cross-compilation, Package.swift syntax |
-| xcodebuild Basics | [xcodebuild-basics.md](references/xcodebuild-basics.md) | Build settings, SDK selection, CI setup |
+| xcodebuild Basics | [xcodebuild-basics.md](references/xcodebuild-basics.md) | Build settings, SDK selection |
 | Destinations | [destinations.md](references/destinations.md) | All platforms, multiple destinations |
 | Testing | [testing.md](references/testing.md) | Test filtering, parallel execution, coverage |
-| Archiving | [archiving.md](references/archiving.md) | Archive creation, CI archives |
+| Archiving | [archiving.md](references/archiving.md) | Archive creation |
 | Troubleshooting | [troubleshooting.md](references/troubleshooting.md) | Build/test failures, error recovery |
 
 ## Common Pitfalls
@@ -119,4 +119,4 @@ For all platforms, multiple destinations, or troubleshooting destination errors,
 3. **Unnecessary workspace flag**: Only use `-workspace` for CocoaPods or multi-project setups. Standard projects with SPM dependencies just use `.xcodeproj`.
 4. **Case-sensitive scheme names**: Run `xcodebuild -list` to see exact scheme names.
 5. **Outdated simulator names**: Names change with Xcode versions. Run `xcrun simctl list devices available`.
-6. **Code signing errors in CI**: Add `CODE_SIGNING_ALLOWED=NO` for builds that don't need signing.
+6. **Code signing errors**: Add `CODE_SIGNING_ALLOWED=NO` for builds that don't require signing.

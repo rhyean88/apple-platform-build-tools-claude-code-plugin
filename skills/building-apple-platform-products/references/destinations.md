@@ -166,7 +166,7 @@ Use generic destinations for build-only operations (no need to run on simulator)
 
 Generic destinations are useful for:
 - Archive builds
-- CI builds where you don't need to run the app
+- Builds where you don't need to run the app
 - Framework builds
 
 ## Multiple Destinations
@@ -215,24 +215,11 @@ xcodebuild test \
 | Erase simulator | `xcrun simctl erase "<name>"` |
 | Erase all simulators | `xcrun simctl erase all` |
 
-## Complete Example
-
-### Minimal
+## Example
 
 ```bash
 xcodebuild test -scheme "MyApp" \
   -destination 'platform=iOS Simulator,name=iPhone 17'
-```
-
-### Full CI Example
-
-```bash
-xcodebuild test \
-  -scheme "MyApp" \
-  -destination 'platform=iOS Simulator,name=iPhone 17' \
-  -destination 'platform=iOS Simulator,name=iPad Pro 13-inch (M5)' \
-  -derivedDataPath ./build \
-  CODE_SIGNING_ALLOWED=NO
 ```
 
 ## Troubleshooting
